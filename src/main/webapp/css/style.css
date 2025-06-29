@@ -1,0 +1,118 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 3px solid #c0a062; /* Un toque dorado para joyería */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: 'Garamond', serif; /* Fuente más elegante para el título */
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #c0a062; /* Dorado al pasar el ratón */
+}
+
+main {
+    padding: 20px;
+    max-width: 960px; /* Centrar contenido */
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+section h2, section h3 {
+    color: #555;
+    font-family: 'Garamond', serif;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+/* Estilos para la lista de productos */
+.lista-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Diseño responsive para productos */
+    gap: 20px;
+}
+
+.producto-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: #fdfdfd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.producto-item h3 {
+    margin-top: 0;
+    color: #c0a062; /* Título del producto en dorado */
+}
+
+a {
+    color: #c0a062;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
