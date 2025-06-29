@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <display-name>JoyeriasWebApp</display-name>
+
+    <!-- Servlet de Inicio -->
+    <servlet>
+        <servlet-name>InicioServlet</servlet-name>
+        <servlet-class>com.joyeria.servlet.InicioServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InicioServlet</servlet-name>
+        <url-pattern>/inicio</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet de Productos -->
+    <servlet>
+        <servlet-name>ProductosServlet</servlet-name>
+        <servlet-class>com.joyeria.servlet.ProductosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductosServlet</servlet-name>
+        <url-pattern>/productos</url-pattern>
+    </servlet-mapping>
+
+    <!-- Página de bienvenida -->
+    <welcome-file-list>
+        <welcome-file>inicio</welcome-file> <!-- Redirige la raíz del contexto a /inicio -->
+    </welcome-file-list>
+
+</web-app>
